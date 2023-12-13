@@ -1,0 +1,64 @@
+Q 1. What are the different data types present in javaScript?
+  
+  JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+
+	Primitive data type
+	Non-primitive (reference) data type
+
+	JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc. For example:
+
+	var a=40;//holding number  
+	var b="Rahul";//holding string  
+
+	JavaScript has 8 Datatypes
+  
+	Data Types	   Description                                                          Example
+	   	                                                                            
+1.	String	       represents textual data	                                            'hello', "hello world!" etc
+2.	Number	       an integer or a floating-point number	                            3, 3.234, 3e-2 etc.
+3.	BigInt	       an integer with arbitrary precision	                                900719925124740999n , 1n etc.
+4.	Boolean	       Any of two values: true or false	                                    true and false
+5.	undefined	   a data type whose variable is not initialized	                    let a;
+6.	null	       denotes a null value	                                                let a = null;
+7.	Symbol	       data type whose instances are unique and immutable	                let value = Symbol('hello');
+8.	Object	       key-value pairs of collection of data	                            let student = { };
+
+	Here, all data types except Object are primitive data types, whereas Object is non-primitive.
+
+	Note: The Object data type (non-primitive type) can store collections of data, whereas primitive data type can only store a single data.
+
+	The object data type can contain:
+
+	1. An object
+	2. An array
+	3. A date
+
+Q 2. What are the JavaScript Engines? Explain ECMA in JS.
+
+	The JavaScript Engine is an open-source computer program whose responsibility is to execute/run JavaScript. There are a lot of steps involved in executing the JavaScript Engine, but essentially executing JavaScript code is what an engine does. All modern browsers have their own version of the JavaScript Engine. But Google's V8 Engine is the most popular JavaScript Engine. 
+
+	Ecma International (formally European Computer Manufacturers Association) is a non-profit organization that develops standards in computer hardware, communications, and programming languages. ECMA (European Computer Manufacturers Association) is an organization that standardizes scripting languages to ensure consistency and interoperability across different platforms. In the context of JavaScript, ECMAScript (often abbreviated as ES) refers to the standard upon which JavaScript is based.
+
+	JavaScript is an implementation of the ECMAScript standard. The ECMAScript specification defines the core features and functionality that a scripting language should provide, including syntax, types, and objects. JavaScript engines in web browsers and other environments adhere to the ECMAScript standard, which helps ensure that code written in JavaScript works consistently across various platforms and devices.
+
+Q 3.  Why We use JavaScript?
+
+	JavaScript is a light-weight object-oriented programming language that is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language. JavaScript enables dynamic interactivity on websites when it is applied to an HTML document.
+
+	JavaScript helps the users to build modern web applications to interact directly without reloading the page every time. JavaScript is commonly used to dynamically modify HTML and CSS to update a user interface by the DOM API. It is mainly used in web applications.
+
+Q 4. What is JavaScript? And also Explain the histroy of JavaScript?
+	
+	vaScript is a high-level, interpreted programming language that is primarily known for its use in web development. It is an essential technology for creating dynamic and interactive content on websites. JavaScript can be executed in web browsers to manipulate the Document Object Model (DOM), allowing developers to update and modify the content, structure, and style of web pages in response to user actions.
+
+	JavaScript is a programming language that represents one of the three core languages used to develop websites, alongside HTML and CSS. Whereas HTML and CSS give a website structure and style, JavaScript lets you add functionality and behaviors to your website. This allows visitors to interact with your website in various creative ways.
+
+	JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser.
+
+Q 5. What is DOM in js?   
+
+	The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+	A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+
+	For example, the DOM specifies that the querySelectorAll method in this code snippet must return a list of all the <p> elements in the document:
