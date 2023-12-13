@@ -1,0 +1,81 @@
+Q 1. What are the differences between var, let and const?
+	
+	1. var:
+
+	Scope: Function-scoped, not block-scoped. It means that variables declared with var are accessible throughout the entire function in which they are declared.
+
+	Hoisting: Variables declared with var are hoisted to the top of their scope, which means they can be used before the declaration in the code.
+
+	Reassignment: Can be reassigned and updated.
+
+	2. let:
+
+	Scope: Block-scoped. Variables declared with let are only accessible within the block (e.g., within braces {}) in which they are defined.
+
+	Hoisting: Variables declared with let are hoisted to the top of their block, but they are not initialized until the declaration is encountered.
+
+	Reassignment: Can be reassigned.
+
+	3. const:
+
+	Scope: Block-scoped, similar to let.
+
+	Hoisting: Like let, const is hoisted to the top of its block, but it is not initialized until the declaration is reached.
+
+	Reassignment: Cannot be reassigned. However, for objects and arrays declared with const, their properties or elements can be modified.
+
+Q 2. Difference between undefined vs not defined vs NaN
+	
+	"undefined" is a special value assigned to a variable that has been declared but not assigned a value.
+
+	"Not defined" refers to the situation where you're trying to use a variable or identifier that has not been declared at all.
+
+	"NaN" is a value representing the result of an operation that doesn't yield a valid numeric value.
+
+Q 3. What is difference between null and undefined and where to use what?
+	
+	undefined:
+
+	Meaning: A variable is undefined when it has been declared but has not been assigned any value.
+
+	Scenario: Typically, this happens when a variable is declared without an explicit initialization or when you try to access the value of an object property that doesn't exist.
+
+	null:
+
+	Meaning: null is a value that represents the intentional absence of any object value or no value or no reference to an object.
+	Scenario: It's often used as a deliberate assignment to indicate that a variable or object property should have no value.
+
+	Use undefined when a variable has been declared but has not been assigned a value yet, or when you're accessing a property of an object that doesn't exist.
+	Use null when you want to explicitly indicate that a variable or object property should have no value or reference.
+
+Q 4. What is execution context
+	
+	When the JavaScript engine scans a script file, it makes an environment called the Execution Context that handles the entire transformation and execution of the code.
+
+	During the context runtime, the parser parses the source code and allocates memory for the variables and functions. The source code is generated and gets executed.
+
+	There are two types of execution contexts: global and function. The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. A function execution context is created whenever a function is called, representing the function's local scope.
+
+Q 5. What is use of prompt in JavaScript? 
+
+	window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog.
+
+	Under some conditions — for example, when the user switches tabs — the browser may not actually display a dialog, or may not wait for the user to submit text or to cancel the dialog.
+
+	The prompt() method displays a dialog box that prompts the user for input.
+
+	The prompt() method returns the input value if the user clicks "OK", otherwise it returns null.
+
+
+Q 6. Why JavaScript is Dyanmic Language?
+
+	JavaScript is considered a dynamic language because it allows for:
+
+	1. Dynamic Typing: Variables can change types during runtime.
+	2. Dynamic Memory Management: Automatic memory allocation and deallocation.
+	3. Late Binding: Resolution of variables and functions occurs at runtime.
+	4. Dynamic Object Properties: Properties can be added or removed from objects during runtime.
+	5. Functions as First-Class Citizens: Functions can be assigned, passed, and returned dynamically.
+	6. Prototypal Inheritance: Objects can inherit properties dynamically.
+	
+	These features provide flexibility and adaptability, making JavaScript suitable for various scenarios.
