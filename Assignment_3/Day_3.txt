@@ -1,0 +1,187 @@
+Q 1. Write the Code for all Data types.
+
+1.	String	        represents textual data	                                           'hello', "hello world!" etc
+2.	Number	        an integer or a floating-point number	                            3, 3.234, 3e-2 etc.
+3.	BigInt	        an integer with arbitrary precision	                                900719925124740999n , 1n etc.
+4.	Boolean	        Any of two values: true or false	                                    true and false
+5.	undefined	    a data type whose variable is not initialized	                    let a;
+6.	null	        denotes a null value	                                            let a = null;
+7.	Symbol	        data type whose instances are unique and immutable	                let value = Symbol('hello');
+8.	Object	        key-value pairs of collection of data	                            let student = { };
+	
+
+	1. String 
+
+	Example: let a ="Amit";
+	cosole.log(typeof(a));
+	O/P: String
+
+	2.Number 
+
+	Example: let a= 14;
+	console.log(typeof(a));
+	O/P: Number
+
+	3.Bigint
+	Example: let a = 900719925124740999;
+	console.log(typeof(a));
+	O/P:Bignint
+
+	4.Boolean
+
+	Example: let a = true;
+	console.log(typeof(a));
+	O/P: Boolean
+
+	5.Undefined
+
+	Example: let a;
+	console.log(typeof(a));
+	O/P: Undefined
+
+	6. Null
+
+	Example: let a= Null;
+	conslole.log(typeof(a));
+	O/P: Null
+
+	7. Symbol 
+
+	Example: let a = Symbol('hello');
+	console.log(typeof(a));
+	O/P: Symbol
+
+	8. Object
+
+	Example: let obj = {name:"Amit Kumar", roll_no:23};
+	console.log(typeof(obj));
+	O/P: Object
+
+Q 2. What are the uses of JavaScript Operators?
+	
+	JavaScript operators are symbols that perform operations on operands, which can be values or variables. There are various types of operators in JavaScript, and they serve different purposes.
+
+Q 3. Explain the Assignment Operator.
+
+	Assignment Operators:
+
+	The assignment operator (=) is a binary operator. It takes two operands: the variable on the left side to which the value is assigned and the expression on the right side, whose result is assigned to the variable. In JavaScript, the syntax for assignment is:
+
+	var variableName = expression;
+
+	Here, = is the assignment operator, and it operates on two operands: "variableName" (the left operand) and "expression" (the right operand). The value of "expression" is assigned to the variable named "variableName".
+
+	= (Assignment): Assigns a value to a variable.
+	+=, -=, *=, /=, %= (Compound assignment): Performs an operation and assigns the result to the left operand.
+
+	Example:
+	var a = 5;  //"=" Assgnment Operator
+    a += 3; // equivalent to a = a + 3; (a is now 8)
+
+
+Q 4. Explain the all Arithmetic Operators.
+	
+	Arithmetic Operators:
+
+	+ (Addition): Adds two values.
+	- (Subtraction): Subtracts the right operand from the left operand.
+	* (Multiplication): Multiplies two values.
+	/ (Division): Divides the left operand by the right operand.
+	% (Modulus): Returns the remainder of the division.
+	
+	Example:
+	=>Addition
+	var a = 10;
+	var b = 3;
+	var result = a + b; // result will be 13
+
+	=>Subtraction
+	var a = 10;
+	var b = 3;
+	var result = a - b; // result will be 10
+
+	=>Multiplication
+	var a = 10;
+	var b = 3;
+	var result = a * b; // result will be 30
+
+	=>Division
+	var a = 10;
+	var b = 3;
+	var result = a / b; // result will be 3.333
+
+	=>Modulas
+	var a = 10;
+	var b = 3;
+	var result = a % b; // result will be 1
+
+
+Q 5. What are the Binary Operators in js.
+
+	Binary operators in JavaScript are operators that work with two operands. They perform operations such as arithmetic, comparison, logical operations, and bitwise operations. Here are some common binary operators in JavaScript:
+
+	1. Arithmetic Operators:
+
+		+ (Addition)
+		- (Subtraction)
+		* (Multiplication)
+		/ (Division)
+		% (Modulus)
+
+	2. Comparison Operators:
+
+		=== (Strict equal to)
+		!= (Not equal to)
+		!== (Strict not equal to)
+		> (Greater than)
+		< (Less than)
+		>= (Greater than or equal to)
+		<= (Less than or equal to)
+
+	3. Logical Operators:
+
+		&& (Logical AND)
+		|| (Logical OR)
+
+	4. Assignment Operators :
+
+		= (Assignment)
+		+=, -=, *=, /=, %= (Compound assignment)
+
+	5. Bitwise Operators:
+
+		& (Bitwise AND)
+		| (Bitwise OR)
+		^ (Bitwise XOR)
+		~ (Bitwise NOT)
+		<< (Left shift)
+		>> (Right shift)
+		>>> (Unsigned right shift)
+
+
+
+Q 6. Explain the Pre-Increment and Post Increment in js.
+
+	
+	In JavaScript, both pre-increment and post-increment are unary operators that increase the value of a variable by 1. However, they are used in slightly different ways, and their behavior depends on whether they are used before (pre) or after (post) the variable.
+
+	Pre-Increment (++variable):
+
+    In pre-increment, the value of the variable is incremented before its value is used in the surrounding expression.
+
+    Example:
+		var a = 5;
+		var b = ++a; // Increment 'a' first, then assign to 'b'
+		Now, 'a' is 6, and 'b' is also 6
+
+	Post-Increment (variable++):
+
+	In post-increment, the current value of the variable is used in the surrounding expression first, and then the variable is incremented.
+
+	Example:
+		var x = 10;
+		var y = x++; // Assign the current value of 'x' to 'y', then increment 'x'
+		Now, 'x' is 11, and 'y' is 10
+
+
+
