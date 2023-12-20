@@ -1,0 +1,45 @@
+Q 1. You are provided with two numbers A and B. Your task is to add these two numbers.
+	 Note: You have to complete AddTwoNumbers function. No need to take any input.
+
+	 const sum = A+B;
+
+	 console.log(`Sum of ${A} and ${B} is: ${sum}`);
+
+Q 2. You are given two number first as A and second as B and check if both conditions (A<10 and A>B) are 			 
+ 	 satisfied or not with the help of operators. Note: You have to complete Is_Valid function. No need to take any 
+	 input.	 
+
+	 if(A<10 && A>B)
+	 {
+	 	console.log("true");
+	 }else 
+	 console.log("false");
+
+Q 3. You are given two numbers A and B. You need to do the following checks:
+
+	1. if both are divisible by 10 console true. 
+	2. if both are not divisible by 10 console false. 
+	3. if one of them only is divisible by 10 console true. Use operator to do this. 
+
+		Note: You have to complete Check function. No need to take any input.
+
+		if(A%10==0 && B%10==0){
+			console.log("true");
+		}else if(A%10==0 || B%10==0){
+			console.log("One of them is divisible by 10.");
+		}
+		else console.log("false");
+
+Q 4. You are provided a four digit number N only. Your task is to print out the first digit of that number. 
+		
+		Note: You have to complete First_Digit function. No need to take any input.	
+
+		let str = N.toString();
+		console.log(str[0]);
+
+Q 5. You are provided a four digit number N only. Your task is to print out the last digit of that number. 
+		
+		Note: You have to complete Last_Digit function. No need to take any input.
+
+
+			console.log(N%10);
