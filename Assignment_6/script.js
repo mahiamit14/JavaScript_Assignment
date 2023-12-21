@@ -1,16 +1,26 @@
 // Q 1. Find Grades
 
-if (M <= 10) {
-    console.log("The grade is E");
-} if (11 >= M <= 20) {
-    console.log("The grade is D");
-} if (21 >= M <= 30) {
-    console.log("The grade is C");
-} if (31 >= M <= 40) {
-    console.log("The grade is B");
-} if (41 >= M <= 50) {
-    console.log("The grade is A");
+
+switch(true){
+    case (M<=10) :
+         console.log("The grade is E");
+    break;
+    case (M <= 20) :
+         console.log("The grade is D");
+    break;
+    case (M <= 30) :
+         console.log("The grade is C");
+    break;
+    case (M <= 40) :
+         console.log("The grade is B");
+    break;
+    case (M <= 50) :
+         console.log("The grade is A");
+    break;
+
+    default : console.log("You entered invalid input, please enter valid input.");
 }
+
 
 // Q 2. Get Value
 
