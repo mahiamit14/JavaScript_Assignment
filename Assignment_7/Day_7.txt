@@ -1,0 +1,140 @@
+Q 1. What is the syntax for the While loop in JavaScript?
+
+		while (condition) {
+  		// code to be executed as long as the condition is true
+		}
+
+		Example:
+
+		let number = 1;
+
+		while (number <= 5) {
+		console.log(number);
+		number++;
+		}
+
+		O/P : 1 2 3 4 5
+
+Q 2. What is the syntax for the For loop in JavaScript?
+		
+		for (initialization; condition; iteration) {
+		// code to be executed in each iteration
+		}
+
+		Example:
+
+		let number = 1;
+
+		for(number =1;number<=5;number++){
+		console.log(number);
+		}
+
+		O/P : 1 2 3 4 5
+
+
+Q 3. What is a nested loop in JavaScript, and why would you use one?
+
+		A nested loop in JavaScript is a loop structure that is placed inside another loop. This means that you have one loop (inner loop) running inside another loop (outer loop). The concept of nested loops is not specific to JavaScript and is found in many programming languages.
+		
+		Nested loops are used when you need to perform repetitive tasks within the context of another repetitive task. Some common use cases for nested loops include:
+		1.Matrix Operations, 2. Pattern printing, 3. Searching and Sorting etc.
+
+		for (let i = 0; i < outerLimit; i++) {
+  			// Outer loop code
+
+  			for (let j = 0; j < innerLimit; j++) {
+   			// Inner loop code
+
+  			}
+		}
+
+		Example: 
+
+		for (let i = 1; i <= 5; i++) {
+  			for (let j = 1; j <= 5; j++) {
+    		console.log(i * j);
+ 			}
+		}
+
+
+
+Q 4. What is an infinite loop in JavaScript, and how can it be avoided?
+
+		An infinite loop in JavaScript is a loop that continues to execute its block of code indefinitely, with no apparent termination condition. This can happen when the loop's termination condition is never met or when there is no termination condition specified.
+
+		Example: 
+
+		while (true) {
+  		// code that will run forever
+		}
+
+		Infinite loops can lead to performance issues and can make the program unresponsive. Here are some ways to avoid infinite loops:
+		1.Ensure a Termination Condition:
+
+			Always make sure that your loop has a termination condition that can eventually be met. For example, if you're using a while loop, ensure that the condition becomes false at some point.
+
+		2. Use a for Loop:
+			for loops have built-in initialization, condition, and iteration components, making it less likely to forget any of them.
+
+		3. Use Break Statements:
+			Introduce a condition within the loop that, when met, breaks out of the loop using the break statement.
+
+		4. Be Careful with Asynchronous Code:
+			When dealing with asynchronous code, be cautious not to create unintentional infinite loops. Ensure that asynchronous operations complete or are handled properly to prevent perpetual execution.
+
+Q 5. How do you break out of two nested for loops?
+		
+		In JavaScript, breaking out of two nested for loops can be achieved using the break statement along with labels. Labels allow you to specify which loop the break statement should apply to. 
+
+		Here's an example:
+
+		outerLoop: for (let i = 0; i < 3; i++) {
+  						for (let j = 0; j < 3; j++) {
+    						console.log(i, j);
+
+   					 		// If a certain condition is met, break out of both loops
+    						if (someCondition) {
+      						break outerLoop;
+   					 		}
+  						}
+					}
+
+Q 6. What is the difference between the break statement and the continue directive?
+
+		Break Statement:  
+						The break statement is used to exit (terminate) a loop prematurely, regardless of whether the loop condition is still true. It is commonly used to break out of a loop when a certain condition is met.
+
+						for (let i = 0; i < 5; i++) {
+  							if (i === 3) {
+    							break; // This will exit the loop when i is 3
+  							}
+  							console.log(i);
+						}
+
+
+		continue Statement:
+
+						The continue statement is used to skip the rest of the code inside a loop for the current iteration and move on to the next iteration. It doesn't terminate the loop; instead, it jumps to the next iteration.
+
+						for (let i = 0; i < 5; i++) {
+  							if (i === 2) {
+   							 	continue; // This will skip the iteration when i is 2
+  							}
+  							console.log(i);
+						}
+
+
+Q 7. Can you stop a loop based on a specific condition?
+		
+		Yes, you can stop a loop based on a specific condition by using the break statement. The break statement is used to exit a loop prematurely when a certain condition is met. 
+
+		Here's an example:
+
+		for (let i = 0; i < 10; i++) {
+  			console.log(i);
+
+  			// Check a condition, and if it's true, break out of the loop
+  			if (i === 5) {
+    			break;
+  			}
+		}
