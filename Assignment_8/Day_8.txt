@@ -1,0 +1,52 @@
+Q 1. Write a JavaScript function to check whether an input is an array or not.
+		function checkArr(input) {
+
+            if (typeof input === "object") {
+                console.log("This is Array");
+            } else console.log("This is not Array");
+        }
+
+        let arr = [1, 2, 3];
+        let arr1 = "Amit";
+
+        checkArr(arr);  // This is an Array
+    
+        checkArr(arr1); // This is not an Array 
+
+Q 2.  Write a JavaScript program that prints the elements of the following array.Note : Use nested for loops.
+
+
+Q 3. There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual 
+	 index value in the given array. 
+	 Sample array : array1 = [1,0,2,3,4]; array2 = [3,5,6,7,8,13];
+	 Expected Output : [4, 5, 8, 10, 12, 13]
+
+	 if(arr1.length<arr2.length){
+            for(let i = 0; i < arr1.length; i++){
+                arr2[i] =arr2[i]+arr1[i];
+            }
+            console.log(arr2);
+         }
+         else {for(let i = 0; i < arr2.length; i++){
+            arr1[i] =arr1[i]+arr2[i];
+         }
+         console.log(arr1);
+        }
+         
+
+
+Q 4. Write a simple JavaScript program to join all elements of the following array into a string.
+	 Sample Array: myColor = ["Red", "Green", "White", "Black"];
+	 Expected Output :
+	 "Red,Green,White,Black"
+	 "Red,Green,White,Black"
+	 "Red+Green+White+Black"
+
+
+
+
+
+
+Q 5. Write a JavaScript program to sort the items of an array.
+	 Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+	 Sample Output : -4,-3,1,2,3,5,6,7,8
