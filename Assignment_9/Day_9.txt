@@ -16,11 +16,14 @@ Q 2. Write a JS code to print a pattern using for loop
 1 2 3 4 5 6 7 
 1 2 3 4 5 6 7 8 
 
-    for(let i =1;i<=8;i++){
+   for(let i =1;i<=8;i++){
+    let str ="";
     for(let j= 1;j<=i;j++){
-        process.stdout.write(j + " ");
-    }
-    console.log();
+   //  process.stdout.write(j + " ");
+   str += j + " ";
+ }
+ console.log(str);
+ console.log();
 }
 
 
@@ -38,6 +41,28 @@ console.log(max);
 
 Q 4. Write a JS code to find duplicate values in a given array 
 [4,2,34,4,1,12,1,4]
+
+
+1st Method
+
+let res;
+for(let i = 0; i<array.length; i++){
+    for(let j = i+1; j<array.length; j++){
+        if(array[i]==array[j]){
+            console.log(array[i]);
+            res = array[i];
+            break;
+        }
+    }
+if(res!==undefined){
+    break;
+}
+
+} 
+
+console.log(res);
+
+
 
 Q 5. Write a JS code to print a 2D array
 arr = [[1, 2], 
